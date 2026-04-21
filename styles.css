@@ -27,6 +27,7 @@ body {
     margin: 0 auto;
 }
 
+/* HEADER */
 .header {
     height: 70px;
     display: flex;
@@ -73,22 +74,24 @@ h1 {
     margin: 0 auto;
 }
 
-/* IMAGE */
+/* IMAGE SECTION */
 .image-section {
     padding: 80px 0 50px;
     text-align: center;
 }
 
 .image-box {
-    max-width: 650px;
+    max-width: 500px;
     margin: 0 auto;
-    border-radius: 16px;
+    border-radius: var(--radius);
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* 🔥 CRITICAL FIX */
 .image-box img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -98,7 +101,7 @@ h1 {
     margin-top: 12px;
 }
 
-/* STORY TEXT */
+/* STORY */
 .story {
     padding: 40px 0 80px;
 }
@@ -149,8 +152,13 @@ h1 {
     margin-top: 0;
 }
 
+/* MOBILE */
 @media (max-width: 900px) {
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    .image-box {
+        max-width: 90%;
     }
 }
